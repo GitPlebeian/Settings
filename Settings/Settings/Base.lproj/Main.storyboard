@@ -14,12 +14,12 @@
         <scene sceneID="fcs-K8-VCc">
             <objects>
                 <tableViewController id="hUl-pk-3T1" customClass="SettingTableViewController" customModule="Settings" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="jwK-mP-IP2">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="jwK-mP-IP2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="settingCell" rowHeight="94" id="D5G-72-6ge">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="settingCell" rowHeight="94" id="D5G-72-6ge" customClass="SettingTableViewCell" customModule="Settings" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="94"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="D5G-72-6ge" id="vBi-Ys-6G7">
@@ -55,6 +55,11 @@
                                         <constraint firstAttribute="trailingMargin" secondItem="1U5-FY-4sp" secondAttribute="trailing" id="Qrr-v8-Wwa"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="iconImageView" destination="yXm-Fz-JTS" id="zsi-ZU-vHq"/>
+                                    <outlet property="settingNameLabel" destination="DSa-br-lpD" id="y8L-rx-YR1"/>
+                                    <outlet property="settingSwitch" destination="Yyo-n6-i5T" id="El5-43-YNI"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
