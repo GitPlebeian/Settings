@@ -46,7 +46,11 @@ class SettingTableViewCell: UITableViewCell {
             
             backgroundColor = setting.isOn ? .blue : .white
         } else {
+            iconImageView.image = nil
+            settingNameLabel.text = ""
+            settingSwitch.isOn = false
             
+            backgroundColor = .white
         }
     }
 }
