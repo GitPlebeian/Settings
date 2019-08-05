@@ -44,6 +44,9 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yyo-n6-i5T">
                                                     <rect key="frame" x="325" y="20.5" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="settingSwitchValueChanged:" destination="D5G-72-6ge" eventType="valueChanged" id="FWC-IN-frV"/>
+                                                    </connections>
                                                 </switch>
                                             </subviews>
                                         </stackView>
